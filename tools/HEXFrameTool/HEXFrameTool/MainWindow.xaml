@@ -1,0 +1,152 @@
+﻿<Window x:Class="MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="HEX Frame Tool" Height="339" Width="878" xmlns:my="clr-namespace:HEXFrameTool" Style="{StaticResource Nexa}" Icon="/HEXFrameTool;component/icon.ico">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="40" />
+        </Grid.RowDefinitions>
+        <Canvas Name="Canvas1" Width="314.41594029" Height="283.440063052" Margin="79,8" Grid.RowSpan="4">
+            <Path Stroke="White" Fill="#404040" StrokeThickness="1" Data="M 140.0 0.0 L 142.435529267 17.329691203 L 127.246946696 35.0 L 40.2628942527 35.0 L 13.8480589449 12.0379339853 A 35.0 35.0 0 0 1 40.2628942527 0.0 L 140.0 0.0 Z" Cursor="Hand" Name="SEG_D1">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1" ScaleY="-1"/>
+                        <TranslateTransform X="-2.276636" Y="280.357561"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path Stroke="White" Fill="#404040" StrokeThickness="1" Data="M 52.3687345653 121.137529624 L 37.1562166535 138.637529624 L 19.4842341345 138.637529624 L 5.60351235542 39.8710621527 A 35.0 35.0 0 0 1 13.8480589449 12.0379339853 L 40.2628942527 35.0 L 52.3687345653 121.137529624 Z" Cursor="Hand" Name="SEG_E">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1" ScaleY="-1"/>
+                        <TranslateTransform X="-2.276636" Y="280.357561"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path Stroke="White" Fill="#404040" StrokeThickness="1" Data="M 34.7341216865 247.146117781 L 19.4842341345 138.637529624 L 37.1562166535 138.637529624 L 57.2876637799 156.137529624 L 69.3935040925 242.275059248 L 46.4314380778 268.689894555 A 35.0 35.0 0 0 1 34.7341216865 247.146117781 Z" Cursor="Hand" Name="SEG_F">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1" ScaleY="-1"/>
+                        <TranslateTransform X="-2.276636" Y="280.357561"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path Stroke="White" Fill="#404040" StrokeThickness="1" Data="M 139.352787008 121.137529624 L 159.484234134 138.637529624 L 174.696752046 121.137529624 L 171.469644122 98.1754636091 L 162.590911734 35.0 L 142.435529267 17.329691203 L 127.246946696 35.0 L 135.640424005 94.722694316 L 139.352787008 121.137529624 Z" Cursor="Hand" Name="SEG_M">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1" ScaleY="-1"/>
+                        <TranslateTransform X="-2.276636" Y="280.357561"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path Stroke="White" Fill="#404040" StrokeThickness="1" Data="M 252.802072101 57.9620660147 L 249.574964176 35.0 L 226.387236793 35.0 L 171.469644122 98.1754636091 L 174.696752046 121.137529624 L 197.88447943 121.137529624 L 252.802072101 57.9620660147 Z" Cursor="Hand" Name="SEG_L">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1" ScaleY="-1"/>
+                        <TranslateTransform X="-2.276636" Y="280.357561"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path Stroke="White" Fill="#404040" StrokeThickness="1" Data="M 69.393502821 277.275059248 L 178.968468269 277.275059248 L 176.532939002 259.945368045 L 156.377556535 242.275059248 L 69.3935040925 242.275059248 L 46.4314380778 268.689894555 A 35.0 35.0 0 0 0 69.393502821 277.275059248 Z" Cursor="Hand" Name="SEG_A1">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1" ScaleY="-1"/>
+                        <TranslateTransform X="-2.276636" Y="280.357561"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path Stroke="White" Fill="#404040" StrokeThickness="1" Data="M 278.705574016 242.275059248 L 191.721521573 242.275059248 L 176.532939002 259.945368045 L 178.968468269 277.275059248 L 278.705574016 277.275059248 A 35.0 35.0 0 0 0 305.120409324 265.237125262 L 278.705574016 242.275059248 Z" Cursor="Hand" Name="SEG_A2">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1" ScaleY="-1"/>
+                        <TranslateTransform X="-2.276636" Y="280.357561"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path Stroke="White" Fill="#404040" StrokeThickness="1" Data="M 266.599733704 156.137529624 L 281.812251615 138.637529624 L 299.484234134 138.637529624 L 313.36496318 237.404048798 A 35.0 35.0 0 0 1 305.120409324 265.237125262 L 278.705574016 242.275059248 L 266.599733704 156.137529624 Z" Cursor="Hand" Name="SEG_B">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1" ScaleY="-1"/>
+                        <TranslateTransform X="-2.276636" Y="280.357561"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path Stroke="White" Fill="#404040" StrokeThickness="1" Data="M 299.484234134 138.637529624 L 281.812251615 138.637529624 L 261.680804489 121.137529624 L 249.574964176 35.0 L 272.537030191 8.5851646922 A 35.0 35.0 0 0 1 284.234346582 30.1289414664 L 299.484234134 138.637529624 Z" Cursor="Hand" Name="SEG_C">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1" ScaleY="-1"/>
+                        <TranslateTransform X="-2.276636" Y="280.357561"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path Stroke="White" Fill="#404040" StrokeThickness="1" Data="M 140.0 0.0 L 249.574968661 1.42108547152e-13 A 35.0 35.0 0 0 1 272.537030191 8.5851646922 L 249.574964176 35.0 L 162.590911734 35.0 L 142.435529267 17.329691203 L 140.0 0.0 Z" Cursor="Hand" Name="SEG_D2">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1" ScaleY="-1"/>
+                        <TranslateTransform X="-2.276636" Y="280.357561"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path Stroke="White" Fill="#404040" StrokeThickness="1" Data="M 66.9373232701 35.0 L 40.2628942527 35.0 L 43.9752572554 61.4148353078 L 112.678357991 121.137529624 L 139.352787008 121.137529624 L 135.640424005 94.722694316 L 66.9373232701 35.0 Z" Cursor="Hand" Name="SEG_N">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1" ScaleY="-1"/>
+                        <TranslateTransform X="-2.276636" Y="280.357561"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path Stroke="White" Fill="#404040" StrokeThickness="1" Data="M 52.3687345653 121.137529624 L 37.1562166535 138.637529624 L 57.2876637799 156.137529624 L 121.083988839 156.137529624 L 144.271716223 156.137529624 L 159.484234134 138.637529624 L 139.352787008 121.137529624 L 112.678357991 121.137529624 L 52.3687345653 121.137529624 Z" Cursor="Hand" Name="SEG_G1">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1" ScaleY="-1"/>
+                        <TranslateTransform X="-2.276636" Y="280.357561"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path Stroke="White" Fill="#404040" StrokeThickness="1" Data="M 66.1663961683 219.312993233 L 69.3935040925 242.275059248 L 92.5812314761 242.275059248 L 147.498824147 179.099595638 L 144.271716223 156.137529624 L 121.083988839 156.137529624 L 66.1663961683 219.312993233 Z" Cursor="Hand" Name="SEG_H">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1" ScaleY="-1"/>
+                        <TranslateTransform X="-2.276636" Y="280.357561"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path Stroke="White" Fill="#404040" StrokeThickness="1" Data="M 156.377556535 242.275059248 L 176.532939002 259.945368045 L 191.721521573 242.275059248 L 183.328044264 182.552364932 L 179.615681261 156.137529624 L 159.484234134 138.637529624 L 144.271716223 156.137529624 L 147.498824147 179.099595638 L 156.377556535 242.275059248 Z" Cursor="Hand" Name="SEG_J">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1" ScaleY="-1"/>
+                        <TranslateTransform X="-2.276636" Y="280.357561"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path Stroke="White" Fill="#404040" StrokeThickness="1" Data="M 252.031144999 242.275059248 L 278.705574016 242.275059248 L 274.993211013 215.86022394 L 206.290110278 156.137529624 L 179.615681261 156.137529624 L 183.328044264 182.552364932 L 252.031144999 242.275059248 Z" Cursor="Hand" Name="SEG_K">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1" ScaleY="-1"/>
+                        <TranslateTransform X="-2.276636" Y="280.357561"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path Stroke="White" Fill="#404040" StrokeThickness="1" Data="M 266.599733704 156.137529624 L 281.812251615 138.637529624 L 261.680804489 121.137529624 L 197.88447943 121.137529624 L 174.696752046 121.137529624 L 159.484234134 138.637529624 L 179.615681261 156.137529624 L 206.290110278 156.137529624 L 266.599733704 156.137529624 Z" Cursor="Hand" Name="SEG_G2">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1" ScaleY="-1"/>
+                        <TranslateTransform X="-2.276636" Y="280.357561"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+        </Canvas>
+        <my:COLORPICKER x:Name="colorPicker" Width="300" Grid.Column="1" Grid.RowSpan="4" />
+        <Label Content="FILL" HorizontalAlignment="Left" Name="fillLabel" Width="80" Margin="5" VerticalContentAlignment="Center" Foreground="#404040" FontSize="18" Background="LightGray" Cursor="Hand" />
+        <Label Content="RND" HorizontalAlignment="Right" Name="randomButton" Width="80" Margin="5" VerticalContentAlignment="Center" Foreground="#404040" FontSize="18" Background="LightGray" Cursor="Hand" HorizontalContentAlignment="Right" />
+        <Label Content="CLEAR" HorizontalAlignment="Left" Name="clearLabel" Width="80" Margin="5" VerticalContentAlignment="Center" Foreground="#404040" FontSize="18" Background="LightGray" Cursor="Hand" Grid.Row="1"/>
+        <Label Content="CODE" HorizontalAlignment="Left" Name="codeLabel" Width="80" Margin="5" VerticalContentAlignment="Center" Foreground="#404040" FontSize="18" Background="LightGray" Cursor="Hand" Grid.Row="3"/>
+    </Grid>
+</Window>
