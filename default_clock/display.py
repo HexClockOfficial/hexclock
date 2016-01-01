@@ -52,7 +52,7 @@ def attention():
 
 def fade_frame(frame, delay):
     global segments
-    step = 1.0/30.0
+    step = 1.0/20.0
     numf = int(delay/step)
     color_deltas = [((r1-r0)/numf, (g1-g0)/numf, (b1-b0)/numf) for (r1, g1, b1), (r0, g0, b0) in zip(frame, segments)]
     for f in range(numf):
@@ -60,12 +60,15 @@ def fade_frame(frame, delay):
             r, g, b = segments[i]
             rd, gd, bd = color_deltas[i]
             segments[i] = (r+rd, g+gd, b+bd)
-        push_segs()
-        time.sleep(step)
+        elapsed = push_segs()
+        time.sleep(max(step-elapsed, 0))
     segments = list(frame)
     push_segs()
 
 
 def push_segs():
     global segments
+    start = time.time()
     driver.push(segments)
+    end = time.time()
+    return end - start
