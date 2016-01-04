@@ -146,6 +146,7 @@
         <my:COLORPICKER x:Name="colorPicker" Width="300" Grid.Column="1" Grid.RowSpan="4" />
         <Label Content="FILL" HorizontalAlignment="Left" Name="fillLabel" Width="80" Margin="5" VerticalContentAlignment="Center" Foreground="#404040" FontSize="18" Background="LightGray" Cursor="Hand" />
         <Label Content="RND" HorizontalAlignment="Right" Name="randomButton" Width="80" Margin="5" VerticalContentAlignment="Center" Foreground="#404040" FontSize="18" Background="LightGray" Cursor="Hand" HorizontalContentAlignment="Right" />
+        <Label Content="LIVE" HorizontalAlignment="Right" Name="tcpConnectButton" Width="80" Margin="5" VerticalContentAlignment="Center" Foreground="#404040" FontSize="18" Background="LightGray" Cursor="Hand" HorizontalContentAlignment="Right" Grid.Row="3"/>
         <Label Content="CLEAR" HorizontalAlignment="Left" Name="clearLabel" Width="80" Margin="5" VerticalContentAlignment="Center" Foreground="#404040" FontSize="18" Background="LightGray" Cursor="Hand" Grid.Row="1"/>
         <Label Content="CODE" HorizontalAlignment="Left" Name="codeLabel" Width="80" Margin="5" VerticalContentAlignment="Center" Foreground="#404040" FontSize="18" Background="LightGray" Cursor="Hand" Grid.Row="3"/>
     </Grid>

@@ -2,3 +2,5 @@ enable i2c through raspiconfig
 sudo apt-get install i2c-tools
 add i2c-dev to /etc/modules
 sudo apt-get install python-smbus
+change host name to hexclock
+sudo apt-get install samba

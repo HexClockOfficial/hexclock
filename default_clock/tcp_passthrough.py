@@ -1,15 +1,19 @@
 import socket
 import threading
+import display
 
 main_socket = None
 connected = False
-server_up = True
+accepting_conns = 1
 
 
-# def decode_data(data):
-#     for i in range(8):
-#         display.segments[i] = [ord(data[(i*3)]), ord(data[(i*3)+1]), ord(data[(i*3)+2])]
-#     display.push_segs()
+def decode_data(data):
+    data_start = data.index('HEX') + 3
+    if (len(data)-data_start) >= 48:
+        frame = [(0, 0, 0)]*16
+        for i in range(16):
+            frame[i] = ord(data[(i*3)+0+data_start]), ord(data[(i*3)+1+data_start]), ord(data[(i*3)+2+data_start])
+        display.show_frame(frame)
 
 
 def receive(conn):
@@ -23,16 +27,15 @@ def receive(conn):
             connected = False
 
         if data != '':
-            # decode_data(data)
-            placeholder = 0
+            decode_data(data)
         else:
             conn.close()
             connected = False
 
 
 def threaded_loop():
-    global main_socket, connected, server_up
-    while server_up:
+    global main_socket, connected, accepting_conns
+    while accepting_conns:
         conn, addr = main_socket.accept()
         connected = True
         receive(conn)

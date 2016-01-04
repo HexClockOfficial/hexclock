@@ -16,3 +16,23 @@ C:\Users\Justin B\documents\visual studio 2010\Projects\HEXFrameTool\HEXFrameToo
 C:\Users\Justin B\documents\visual studio 2010\Projects\HEXFrameTool\HEXFrameTool\obj\x86\Release\HEXFrameTool.exe
 C:\Users\Justin B\documents\visual studio 2010\Projects\HEXFrameTool\HEXFrameTool\obj\x86\Release\HEXFrameTool.xml
 C:\Users\Justin B\documents\visual studio 2010\Projects\HEXFrameTool\HEXFrameTool\obj\x86\Release\HEXFrameTool.pdb
+C:\Users\dinosaur\Documents\hexclock\tools\HEXFrameTool\HEXFrameTool\obj\x86\Release\HEXFrameTool.exe
+C:\Users\dinosaur\Documents\hexclock\tools\HEXFrameTool\HEXFrameTool\obj\x86\Release\HEXFrameTool.xml
+C:\Users\dinosaur\Documents\hexclock\tools\HEXFrameTool\HEXFrameTool\obj\x86\Release\HEXFrameTool.pdb
+C:\Users\dinosaur\Documents\hexclock\tools\HEXFrameTool\HEXFrameTool\bin\Release\HEXFrameTool.exe
+C:\Users\dinosaur\Documents\hexclock\tools\HEXFrameTool\HEXFrameTool\bin\Release\HEXFrameTool.pdb
+C:\Users\dinosaur\Documents\hexclock\tools\HEXFrameTool\HEXFrameTool\bin\Release\HEXFrameTool.xml
+C:\Users\dinosaur\Documents\hexclock\tools\HEXFrameTool\HEXFrameTool\obj\x86\Release\COLORPICKER.baml
+C:\Users\dinosaur\Documents\hexclock\tools\HEXFrameTool\HEXFrameTool\obj\x86\Release\Application.baml
+C:\Users\dinosaur\Documents\hexclock\tools\HEXFrameTool\HEXFrameTool\obj\x86\Release\COLORPICKER.g.vb
+C:\Users\dinosaur\Documents\hexclock\tools\HEXFrameTool\HEXFrameTool\obj\x86\Release\MainWindow.g.vb
+C:\Users\dinosaur\Documents\hexclock\tools\HEXFrameTool\HEXFrameTool\obj\x86\Release\Application.g.vb
+C:\Users\dinosaur\Documents\hexclock\tools\HEXFrameTool\HEXFrameTool\obj\x86\Release\GeneratedInternalTypeHelper.g.vb
+C:\Users\dinosaur\Documents\hexclock\tools\HEXFrameTool\HEXFrameTool\obj\x86\Release\HEXFrameTool_MarkupCompile.cache
+C:\Users\dinosaur\Documents\hexclock\tools\HEXFrameTool\HEXFrameTool\obj\x86\Release\HEXFrameTool_MarkupCompile.lref
+C:\Users\dinosaur\Documents\hexclock\tools\HEXFrameTool\HEXFrameTool\obj\x86\Release\MainWindow.baml
+C:\Users\dinosaur\Documents\hexclock\tools\HEXFrameTool\HEXFrameTool\obj\x86\Release\HEXFrameTool.g.resources
+C:\Users\dinosaur\Documents\hexclock\tools\HEXFrameTool\HEXFrameTool\obj\x86\Release\HEXFrameTool.Resources.resources
+C:\Users\dinosaur\Documents\hexclock\tools\HEXFrameTool\HEXFrameTool\obj\x86\Release\HEXFrameTool.vbproj.GenerateResource.Cache
+C:\Users\dinosaur\Documents\hexclock\tools\HEXFrameTool\HEXFrameTool\obj\x86\Release\EnterServerInfo.baml
+C:\Users\dinosaur\Documents\hexclock\tools\HEXFrameTool\HEXFrameTool\obj\x86\Release\EnterServerInfo.g.vb
