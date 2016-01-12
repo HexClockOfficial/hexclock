@@ -4,3 +4,8 @@ add i2c-dev to /etc/modules
 sudo apt-get install python-smbus
 change host name to hexclock
 sudo apt-get install samba
+sudo apt-get install python-scipy
+sudo apt-get install python-pyaudio
+
+increase gain in alsamixer
+sudo alsactl store 1
