@@ -4,12 +4,9 @@ import clap_detection
 def clap_callback():
     print 'wooo'
 
-
 c = clap_detection
 c.init(clap_callback)
 print 'init'
-c.start_detection()
-print 'detecting'
+c.detect = True
+c.detect_loop()
 
-while True:
-    yes = 0

@@ -3,10 +3,14 @@ import time
 import color_tools
 import clock_ascii
 
+debug = False
+
 try:
     import driver
 except ImportError as e:
     from debug import driver_debug as driver
+    debug = True
+    driver.init()
 
 segments = [(0, 0, 0)]*16
 
@@ -24,9 +28,12 @@ def show_char(char, (r, g, b)):
     push_segs()
 
 
-def show_text(text, delay, fade, random, (r, g, b)=(0, 0, 0)):
+def show_text(text, delay, fade, random, (r, g, b)=(0, 0, 0), stutter=0.0):
     for c in text:
         (r, g, b) = color_tools.random_rgb() if random else (r, g, b)
+        if stutter != 0.0:
+            show_char(' ', (0, 0, 0))
+            time.sleep(stutter)
         if not fade:
             show_char(c, (r, g, b))
             time.sleep(delay)
@@ -53,7 +60,7 @@ def attention():
 def fade_frame(frame, delay):
     global segments
     step = 1.0/20.0
-    numf = int(delay/step)
+    numf = max(int(delay/step), 1)
     color_deltas = [((r1-r0)/numf, (g1-g0)/numf, (b1-b0)/numf) for (r1, g1, b1), (r0, g0, b0) in zip(frame, segments)]
     for f in range(numf):
         for i in range(16):

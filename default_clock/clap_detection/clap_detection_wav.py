@@ -22,7 +22,7 @@ def init(callback, low_cutoff=1000, high_cutoff=15000, device_index=1):
     global filter_a, filter_b, stream, output, detection_callback
     detection_callback = callback
     filter_b, filter_a = butter(5, [low_cutoff/22050.0, high_cutoff/22050.0], btype='band')
-    stream = wave.open('rectest.wav')
+    stream = wave.open('outputtest.wav')
     p = pyaudio.PyAudio()
     output = p.open(format=pyaudio.paInt16, channels=1, rate=44100, output=True, frames_per_buffer=2048)
 
