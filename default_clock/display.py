@@ -11,27 +11,27 @@ except ImportError as e:
 segments = [(0, 0, 0)]*16
 
 
-def get_char_frame(char, (r, g, b)):
+def get_char_frame(char, color):
     frame = [(0, 0, 0)]*16
     for i in clock_ascii.char_segs(char):
-        frame[i] = (r, g, b)
+        frame[i] = color
     return frame
 
 
-def show_char(char, (r, g, b)):
+def show_char(char, color):
     global segments
-    segments = get_char_frame(char, (r, g, b))
+    segments = get_char_frame(char, color)
     push_segs()
 
 
-def show_text(text, delay, fade, random, (r, g, b)=(0, 0, 0)):
+def show_text(text, delay, fade, random, color=(0, 0, 0)):
     for c in text:
-        (r, g, b) = color_tools.random_rgb() if random else (r, g, b)
+        color = color_tools.random_rgb() if random else color
         if not fade:
-            show_char(c, (r, g, b))
+            show_char(c, color)
             time.sleep(delay)
         else:
-            fade_frame(get_char_frame(c, (r, g, b)), delay*0.75)
+            fade_frame(get_char_frame(c, color), delay*0.75)
             time.sleep(delay*0.25)
 
 
