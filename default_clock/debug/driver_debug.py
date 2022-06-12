@@ -38,14 +38,14 @@ def push(colors):
     segment_colors = [(r/255.0, g/255.0, b/255.0) for (r, g, b) in colors]
 
 
-def get_intersections((x0, y0), (x1, y1), r0, r1):
-    d = math.hypot(x1-x0, y1-y0)
+def get_intersections(s_point, e_point, r0, r1):
+    d = math.hypot(e_point[0]-s_point[0], e_point[1]-s_point[1])
     a = (math.pow(r0, 2) - math.pow(r1, 2) + math.pow(d, 2))/(d*2.0)
     h = math.sqrt(abs(math.pow(r0, 2) - math.pow(a, 2)))
 
-    x2, y2 = x0+((x1-x0)/d)*a, y0+((y1-y0)/d)*a
+    x2, y2 = s_point[0]+((e_point[0]-s_point[0])/d)*a, s_point[1]+((e_point[1]-s_point[1])/d)*a
 
-    x3off, y3off = ((y1-y0)/d)*h, ((x1-x0)/d)*h
+    x3off, y3off = ((e_point[1]-s_point[1])/d)*h, ((e_point[0]-s_point[0])/d)*h
     return (x2+x3off, y2-y3off), (x2-x3off, y2+y3off)
 
 

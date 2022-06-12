@@ -2,11 +2,13 @@ import threading
 import time
 import color_tools
 import clock_ascii
+import os
 
-try:
-    import driver
-except ImportError as e:
+if os.name == 'nt':
     from debug import driver_debug as driver
+else:
+    import driver
+
 
 segments = [(0, 0, 0)]*16
 
@@ -42,12 +44,20 @@ def show_frame(frame):
 
 
 def attention():
-    for loop in range(4):
-        frame = [(0, 0, 0)]*16
-        for color in [color_tools.random_rgb(), (0, 0, 0)]:
-            for a, b in [(0, 1), (8, 9), (4, 5)]:
-                frame[a] = frame[b] = color
-                fade_frame(frame, 0.2)
+    order = [0, 1, 2, 3, 5, 4, 6, 7]
+
+    for i in range(len(order) * 6):
+        frame = [(0, 0, 0)] * 16
+        for offset in range(3):
+            if i - offset < 0:
+                continue
+            offset_color = color_tools.h_to_rgb((((i - offset) * 30.0) + 360) % 360)
+            frame_index = order[(i - offset + len(order)) % len(order)]
+            brightness = ((3.0 - offset) / 3.0)
+            color = (offset_color[0] * brightness, offset_color[1] * brightness, offset_color[2] * brightness)
+            frame[frame_index] = color
+
+        fade_frame(frame, 0.2)
 
 
 def fade_frame(frame, delay):

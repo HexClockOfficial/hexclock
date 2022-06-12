@@ -1,0 +1,11 @@
+[Unit]
+Description=Hexclock smart clock
+
+[Service]
+User=root
+WorkingDirectory=/home/pi/hexclock/
+ExecStart=python hexclock.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
